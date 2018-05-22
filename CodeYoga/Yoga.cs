@@ -16,6 +16,18 @@ namespace CodeYoga
   {
     static void Main(string[] args)
     {
+      StringBuilder sbHtmlTxt = new StringBuilder();
+      sbHtmlTxt.AppendLine("<!DOCTYPE html>");
+      sbHtmlTxt.AppendLine("<html>");
+      sbHtmlTxt.AppendLine("<head>");
+      sbHtmlTxt.AppendLine("<title>This is a little title</title>");
+      sbHtmlTxt.AppendLine("</head>");
+      sbHtmlTxt.AppendLine("<body>");
+      sbHtmlTxt.AppendLine("<p>This is a paragraph tag</p>");
+      sbHtmlTxt.AppendLine("<a href=\"http://www.linkedin.com/in/goofy/\">Goofy</a>");
+      sbHtmlTxt.AppendLine("</body>");
+      sbHtmlTxt.AppendLine("</html>");
+
       Console.WriteLine("Open");
 
       RandomPause(1);
@@ -78,8 +90,14 @@ namespace CodeYoga
 
       Console.WriteLine(nl);
       Console.WriteLine("Now trying the SQL connection {0}", nl);
-      
+
       /*****************************************************************/
+      Console.WriteLine("Next Wait");
+
+      Wait(4196);
+
+      Console.WriteLine("END Wait");
+
       /****************************************************************/
 
 
@@ -111,8 +129,21 @@ namespace CodeYoga
         connection.Close();
       }
 
+      Console.WriteLine(sbHtmlTxt.ToString());
+
       RandomPause(3);
     }
+
+
+    static public void Wait(int ms)
+    {
+      DateTime start = DateTime.Now;
+      while ((DateTime.Now - start).TotalMilliseconds < ms)
+      {
+        Console.WriteLine(DateTime.Now.Ticks.ToString());
+      }
+    }
+
 
     static public void ReadFile(string filePath, string fileName, ref string[] outCome)
     {
