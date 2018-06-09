@@ -140,7 +140,7 @@ namespace CodeYoga
       DateTime start = DateTime.Now;
       while ((DateTime.Now - start).TotalMilliseconds < ms)
       {
-        Console.WriteLine(DateTime.Now.Ticks.ToString());
+        // Console.WriteLine(DateTime.Now.Ticks.ToString());
       }
     }
 
