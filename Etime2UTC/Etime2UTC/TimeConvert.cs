@@ -27,57 +27,44 @@ namespace Etime2UTC
       datebox.Text = DateTime.UtcNow.ToString("yyyy-MM-dd");
       timeeast.Text = DateTime.UtcNow.AddHours(-4).ToString("HH:mm:ss");
       timehawaii.Text = DateTime.UtcNow.AddHours(-10).ToString("HH:mm:ss");
+      EpochTime.Text = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
     }
 
-    private void go_Click(object sender, EventArgs e)
+    private void Click_convert(object sender, EventArgs e)
     {
-      string testforEpochValue = inputEpochTxt.Text;
-      bool goodToGo = false;
-      goodToGo = IsNumber(testforEpochValue);
+      string sendForConversion = inputEpochTxt.Text;
+      outPutDateTxt.Text = Convert(sendForConversion);
+    }
 
-      if(goodToGo)
+    private void Click_clear(object sender, EventArgs e)
+    {
+      inputEpochTxt.Text = "Enter the Epoch String here";
+      outPutDateTxt.Text = string.Empty;
+    }
+
+    private string Convert(string incommingText)
+    {
+      bool goodToGo = false;
+      Int64 outCome;
+      goodToGo = Int64.TryParse(incommingText, out outCome);
+      if (goodToGo)
       {
-        Int64 outCome;
-        bool ok = false;
-        ok = Int64.TryParse(testforEpochValue, out outCome);
-        string PutUp = HumanDate(outCome);
-        outPutDateTxt.Text = PutUp;
+        if (outCome >= 1451606400) // Epoch greater than 2016 or fails
+        {
+          if (outCome < 1000000000000) // Adds milliseconds if not already added.
+          {
+            outCome = outCome * 1000;
+          }
+          var dtAsString = DateTimeOffset.FromUnixTimeMilliseconds(outCome).DateTime.ToLocalTime();
+          incommingText = dtAsString.ToString("yyyy-MM-dd ~ HH:mm:ss");
+        }
       }
       else
       {
-        inputEpochTxt.Text = string.Empty;
-        inputEpochTxt.Text = "Enter Valid Epoch Number";
+        incommingText = "Not Epoch Time";
       }
-      
-
+      return incommingText;
     }
 
-    private void clear_Click(object sender, EventArgs e)
-    {
-      inputEpochTxt.Text = string.Empty;
-    }
-
-    private string HumanDate(Int64 input)
-    {
-
-      var dtAsString = DateTimeOffset.FromUnixTimeMilliseconds(input).DateTime.ToLocalTime();
-      return dtAsString.ToString("yyyy-MM-dd ~ HH:mm:ss");
-    }
-    private bool IsNumber(string testThis)
-    {
-      bool okNumber = false;
-
-      try
-      {
-        double numberTest = Convert.ToDouble(testThis);
-        okNumber = true;
-      }
-      catch(Exception exText)
-      {
-        outPutDateTxt.Text = "That is not a valid Epoch Number";
-      }
-
-      return okNumber;
-    }
   }
 }
