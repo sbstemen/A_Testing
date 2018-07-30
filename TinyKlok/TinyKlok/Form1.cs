@@ -27,7 +27,7 @@ namespace TinyKlok
         {
             timelcl.Text = DateTime.Now.ToString("HH:mm:ss");
             timeZulu.Text = DateTime.UtcNow.ToString("HH:mm:ss");
-            timeAZ.Text =  DateTime.UtcNow.AddHours(-5).ToString("HH:mm:ss");
+            timeEast.Text =  DateTime.UtcNow.AddHours(-4).ToString("HH:mm:ss");
             dateBox.Text = DateTime.UtcNow.ToString("yyyyMMdd");
         }
 
