@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CC.LMS.Student.Basic.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TestName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">StudentBasics</Value>
+    </Setting>
+    <Setting Name="LogPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\ZlogZ\</Value>
+    </Setting>
+    <Setting Name="StopCount" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="BTURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://BethelTech.qa.ExeterLMS.Com/</Value>
+    </Setting>
+    <Setting Name="CCURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://qa.ExeterLMS.Com/</Value>
+    </Setting>
+    <Setting Name="NAURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://nau.qa.ExeterLMS.Com</Value>
+    </Setting>
+    <Setting Name="SCURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://SCI.qa.ExeterLMS.Com/</Value>
+    </Setting>
+    <Setting Name="WAURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://woli.qa.ExeterLMS.Com/</Value>
+    </Setting>
+    <Setting Name="WZURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://wozu.qa.ExeterLMS.Com/</Value>
+    </Setting>
+    <Setting Name="BTStudent" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">BTS</Value>
+    </Setting>
+    <Setting Name="CCStudent" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CCSS</Value>
+    </Setting>
+    <Setting Name="NAStudent" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NAS</Value>
+    </Setting>
+    <Setting Name="SCStudent" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SCS</Value>
+    </Setting>
+    <Setting Name="WAStudent" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WAS</Value>
+    </Setting>
+    <Setting Name="WZStudent" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WZS</Value>
+    </Setting>
+    <Setting Name="password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">123456</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,24 @@
+﻿body {
+    background-color:aqua;
+}
+
+
+.header :first-child{
+color: red;
+font-size: large;
+}
+
+
+.header :hover{
+color: green;
+font-size: x-large;
+}
+
+
+.highlights :nth-child(odd) {
+color: red;
+font-size: large;
+}
+
+
+
