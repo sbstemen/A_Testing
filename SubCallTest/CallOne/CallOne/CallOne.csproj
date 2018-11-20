@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="CallOne.cs" />
     <Compile Include="CallOneProcess.cs" />
+    <Compile Include="NewUserMaker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

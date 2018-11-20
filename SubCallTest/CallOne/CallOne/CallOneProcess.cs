@@ -12,18 +12,49 @@ namespace CallOne
 
   internal class CallOneProcess
   {
-    public IWebDriver BrowserReady(IWebDriver drvr, UxTwo util, PassFailCount results)
+    public bool KeepGoing(PassFailCount resultsAre)
+    {
+      bool GoodToGo = false;
+      if (resultsAre.Failed == 0)
+      {
+        GoodToGo = true;
+      }
+      return GoodToGo;
+    }
+
+    public IWebDriver BrowserReady(IWebDriver webDriver, UxTwo util, PassFailCount results)
     {
       bool testGood = false;
-      string findThis = "Microsoft";
+      string findThis = "Lucky";
       string pageText = string.Empty;
       string startPage = @"https://www.google.com/";
       Size viewPort = new Size(1650, 1000);
-      drvr.Navigate().GoToUrl(startPage);
+      webDriver.Navigate().GoToUrl(startPage);
       util.RandomPause(2);
-      drvr.Manage().Window.Size = viewPort;
+      webDriver.Manage().Window.Size = viewPort;
+      util.RandomPause(3);
+      pageText = webDriver.PageSource;
       testGood = util.PageWeWanted(util, pageText, findThis, results);
-      return drvr;
+      util.RandomPause(4);
+      return webDriver;
+    }
+
+    public string MNUSR(IWebDriver webDriver, UxTwo util, Usr admin, Usr newGuy, PassFailCount results)
+    {
+      string who = "y";
+      NewUserMaker NUM = new NewUserMaker();
+      who =  NUM.UseThisUser(webDriver, util, admin, newGuy, results);
+
+      if(who == "x" || who == "y")
+      {
+        util.MakeLogEntry("FUCKIT IT ALL FAILED!! ");
+      }
+      else
+      {
+        util.MakeLogEntry("PASSED PASSED PASSED " + Environment.NewLine + who + Environment.NewLine + "PAAAASSEEDD!!");
+      }
+
+      return who;
     }
 
   }

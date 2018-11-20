@@ -16,9 +16,9 @@ namespace CallOne
   {
     /**/
     private static string passWord = "123456";
-    private static string testName = "X";
+    private static string testName = "Practicals";
     private static string runDateTime = DateTime.Now.ToString("-MM-dd-HHmm");
-    private static string logthis = @"C:\TstLog\" + runDateTime + "\\";
+    private static string logthis = @"C:\A10\" + testName + runDateTime + "\\";
     private static string chromePath = Directory.GetCurrentDirectory() + "\\assets\\";
     private UxTwo util = new UxTwo(logthis);
     private PassFailCount results = new PassFailCount();
@@ -29,15 +29,49 @@ namespace CallOne
     [TestInitialize]
     public void TestCount()
     {
+      results.Passed++;
+      results.Failed = 0;
+      Admin.Password = passWord;
+      Admin.LogInAlias = "ScottBS";
+      Admin.ClientUrl = @"https://wozu.qa.ExeterLMS.Com/";
+      var NL = Environment.NewLine;
+
+      if (!Directory.Exists(logthis))
+      {
+        Directory.CreateDirectory(logthis);
+        this.util.MakeLogEntry("LogON start > " + DateTime.UtcNow.Ticks.ToString() + NL);
+      }
+      else
+      {
+        this.util.MakeLogEntry("LogON start > " + DateTime.UtcNow.Ticks.ToString() + NL);
+      }
 
     }
 
     [TestMethod]
     public void Test001()
     {
-      using (IWebDriver DrVr = new ChromeDriver(chromePath))
+      using (IWebDriver webDriver = new ChromeDriver(chromePath))
       {
-        this.Proc.BrowserReady(DrVr, util, results);
+        string useMe = string.Empty;
+        bool G2G = false;
+
+        this.Proc.BrowserReady(webDriver, util, results);
+        G2G = this.Proc.KeepGoing(results);
+
+        if (G2G)
+        {
+          this.util.MakeLogEntry("WOW, we shouldn't be here yet because I am testing fails first.");
+          useMe = this.Proc.MNUSR(webDriver, this.util, this.Admin, this.NewGuy, this.results);
+        }
+        else
+        {
+          webDriver.Close();
+          this.util.MakeLogEntry("Test of fail worked, this means we had a failure at line 52. ");
+          Environment.Exit(101);
+        }
+
+
 
         this.util.RandomPause(3);
       }
