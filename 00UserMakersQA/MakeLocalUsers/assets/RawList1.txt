@@ -1,9 +1,0 @@
-FirstFAA1|LastIs1|AA1sis|AA1crm|AA1@SkyK9.Com|AA1|123456|~
-FirstFAA2|LastIs2|AA2sis|AA2crm|AA2@SkyK9.Com|AA2|123456|~
-FirstFAA3|LastIs3|AA3sis|AA3crm|AA3@SkyK9.Com|AA3|123456|~
-FirstFAA4|LastIs4|AA4sis|AA4crm|AA4@SkyK9.Com|AA4|123456|~
-FirstFAA5|LastIs5|AA5sis|AA5crm|AA5@SkyK9.Com|AA5|123456|~
-FirstFAA6|LastIs6|AA6sis|AA6crm|AA6@SkyK9.Com|AA6|123456|~
-FirstFAA7|LastIs7|AA7sis|AA7crm|AA7@SkyK9.Com|AA7|123456|~
-FirstFAA8|LastIs8|AA8sis|AA8crm|AA8@SkyK9.Com|AA8|123456|~
-FirstFAA9|LastIs9|AA9sis|AA9crm|AA9@SkyK9.Com|AA9|123456|~
