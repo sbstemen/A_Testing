@@ -56,7 +56,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddSection.cs" />
+    <Compile Include="SECFilename.cs" />
     <Compile Include="AddSectionProcess.cs" />
     <Compile Include="NewSectionMaker.cs" />
     <Compile Include="NewUserMaker.cs" />

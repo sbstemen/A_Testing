@@ -1,5 +1,5 @@
 ﻿/* Gotta have a name */
-namespace AddSection
+namespace SECNamespace
 {
   using System;
   using System.Drawing;
@@ -12,7 +12,7 @@ namespace AddSection
 
 
   [TestClass]
-  public class AddSection
+  public class SECClassname
   {
     /**/
     private static string passWord = "123456";
@@ -49,7 +49,7 @@ namespace AddSection
     }
 
     [TestMethod]
-    public void NuSectionUserTest()
+    public void SECNewUsrSection()
     { // .form-control.cc-panel-header-lg
       using (IWebDriver webDriver = new ChromeDriver(chromePath))
       {

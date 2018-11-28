@@ -1,6 +1,6 @@
 ﻿/* Code to Add a section */
 
-namespace AddSection
+namespace SECNamespace
 {
   using System;
   using System.Drawing;

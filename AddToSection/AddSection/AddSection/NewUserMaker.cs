@@ -1,6 +1,6 @@
 ﻿/* Make a user Return only the log in string */
 
-namespace AddSection
+namespace SECNamespace
 {
   using System;
   using System.Drawing;

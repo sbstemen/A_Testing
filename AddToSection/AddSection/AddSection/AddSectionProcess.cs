@@ -1,6 +1,6 @@
 ﻿/* since 1952 */
 
-namespace AddSection
+namespace SECNamespace
 {
   using System;
   using System.Drawing;
