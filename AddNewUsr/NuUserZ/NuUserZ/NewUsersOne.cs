@@ -61,8 +61,9 @@ namespace NuUserZ
 
         if (G2G)
         {
-          this.util.MakeLogEntry("WOW, we shouldn't be here yet because I am testing fails first.");
+          this.util.MakeLogEntry("WOW, we be workin.");
           useMe = this.Proc.MNUSR(webDriver, this.util, this.Admin, this.NewGuy, this.results);
+          this.util.MakeLogEntry("User Name " + useMe);
         }
         else
         {
