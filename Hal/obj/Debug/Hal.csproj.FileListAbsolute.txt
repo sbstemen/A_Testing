@@ -1,6 +1,0 @@
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\bin\Debug\Hal.exe.config
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\obj\Debug\Hal.csprojResolveAssemblyReference.cache
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\bin\Debug\Hal.exe
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\bin\Debug\Hal.pdb
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\obj\Debug\Hal.exe
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\obj\Debug\Hal.pdb

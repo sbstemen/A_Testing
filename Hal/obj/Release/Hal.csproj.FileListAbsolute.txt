@@ -1,5 +1,0 @@
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\bin\Release\Hal.exe.config
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\bin\Release\Hal.exe
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\bin\Release\Hal.pdb
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\obj\Release\Hal.exe
-C:\SBSdox\SbsHub\ExistingCodeToGit\Hal\obj\Release\Hal.pdb
