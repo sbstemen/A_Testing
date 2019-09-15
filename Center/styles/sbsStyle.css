@@ -1,0 +1,46 @@
+﻿body 
+{
+	background-color:blue;
+}
+
+#outterMarker
+{
+	background-image:url(../images/w2.jpg);
+	width:1200px;
+	height:900px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	border-radius:35px;
+}
+
+#middleMarker
+{
+	background-image:url(../images/w1.jpg);
+	width:1100px;
+	height:800px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	border-radius:25px;
+}
+
+#innerMarker
+{
+	background-image:url(../images/w3.jpg);
+	width:1000px;
+	height:700px;	
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	border-radius:15px;
+}
+
+#centerIT
+{
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	border-radius:5px;
+}

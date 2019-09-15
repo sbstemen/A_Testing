@@ -1,0 +1,10 @@
+https://contentapi.qa.exeterlms.com/|
+https://mgmtapi.qa.exeterlms.com/|
+https://platformapi.qa.exeterlms.com/|
+https://resourceapi.qa.exeterlms.com/|
+https://api.qa.exeterlms.com/|
+https://reportsapi.qa.exeterlms.com/|
+https://login.qa.exeterlms.com/|
+https://users.qa.exeterlms.com/test|
+https://wozu.QA.ExeterLMS.Com/|
+https://betheltech.qa.exeterlms.com/|

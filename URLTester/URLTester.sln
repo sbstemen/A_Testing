@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URLTester", "URLTester.csproj", "{F69D02B0-CADF-4047-9BB7-4DE602267501}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F69D02B0-CADF-4047-9BB7-4DE602267501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69D02B0-CADF-4047-9BB7-4DE602267501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69D02B0-CADF-4047-9BB7-4DE602267501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69D02B0-CADF-4047-9BB7-4DE602267501}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3CC71A1-0D25-4C60-A7E2-ABB93C211914}
+	EndGlobalSection
+EndGlobal
